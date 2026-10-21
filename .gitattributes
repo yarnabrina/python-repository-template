@@ -1,4 +1,4 @@
-## Reference: https://github.com/alexkaratarakis/gitattributes/blob/7beed92a802062af247243d6c06a65fbbc7a35de/Common.gitattributes
+## Reference: https://github.com/gitattributes/gitattributes/blob/2c20a14833a5ab196c7fc3effcc72ef4e895f4d4/Common.gitattributes
 
 # Common settings that generally should always be used with your language specific settings
 
@@ -52,6 +52,7 @@
 # Scripts
 *.bash     text eol=lf
 *.fish     text eol=lf
+*.ksh      text eol=lf
 *.sh       text eol=lf
 *.zsh      text eol=lf
 # These are explicitly windows files and should use crlf
@@ -68,10 +69,24 @@
 
 # Archives
 *.7z       binary
+*.bz       binary
+*.bz2      binary
+*.bzip2    binary
 *.gz       binary
+*.lz       binary
+*.lzma     binary
+*.rar      binary
 *.tar      binary
+*.taz      binary
+*.tbz      binary
+*.tbz2     binary
 *.tgz      binary
+*.tlz      binary
+*.txz      binary
+*.xz       binary
+*.Z        binary
 *.zip      binary
+*.zst      binary
 
 # Text files where line endings should be preserved
 *.patch    -text
@@ -84,9 +99,9 @@
 .gitignore     export-ignore
 .gitkeep       export-ignore
 
-## Reference: https://github.com/alexkaratarakis/gitattributes/blob/7beed92a802062af247243d6c06a65fbbc7a35de/Python.gitattributes
-
-# Basic .gitattributes for a python repo.
+## Reference: https://github.com/gitattributes/gitattributes/blob/2c20a14833a5ab196c7fc3effcc72ef4e895f4d4/Python.gitattributes
+#
+# # Basic .gitattributes for a python repo.
 
 # Source files
 # ============
@@ -116,10 +131,15 @@
 # ``shelve``, ``marshal``, ``anydbm``, & ``bsddb``
 # (among others).
 
-## Reference: https://github.com/alexkaratarakis/gitattributes/blob/7beed92a802062af247243d6c06a65fbbc7a35de/Markdown.gitattributes
+## Reference: https://github.com/gitattributes/gitattributes/blob/2c20a14833a5ab196c7fc3effcc72ef4e895f4d4/Markdown.gitattributes
 
 # Apply override to all files in the directory
 *.md linguist-detectable
+
+## Reference: https://github.com/gitattributes/gitattributes/blob/2c20a14833a5ab196c7fc3effcc72ef4e895f4d4/Global/VisualStudioCode.gitattributes
+
+# Fix syntax highlighting on GitHub to allow comments
+.vscode/*.json linguist-language=JSON-with-Comments
 
 ## Custom
 
